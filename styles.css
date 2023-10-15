@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(248, 239, 234);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+ 
+.photo-column {
+    flex: 1;
+    background: url(https://picsum.photos/id/436/500) no-repeat fixed;
+   /* https://unsplash.com/@lucastheis
+    https://unsplash.com/photos/MO-30jajbrM */
+}
+
+.form-column {
+    flex: 1;
+    background: blue;
+}
