@@ -16,12 +16,34 @@ body {
  
 .photo-column {
     flex: 1;
-    background: url(https://picsum.photos/id/436/500) no-repeat fixed;
-   /* https://unsplash.com/@lucastheis
-    https://unsplash.com/photos/MO-30jajbrM */
+    max-width: 40%;
+    background: url(https://picsum.photos/id/436/800) 0 0 / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding-bottom: 8px;
 }
 
 .form-column {
     flex: 1;
-    background: blue;
+}
+
+.logo-container {
+    background: rgba(29, 29, 29, 0.3);
+    padding: 20px;
+    margin-top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a {
+    color: white;
+}
+
+.material-icons.md-48 { 
+    font-size: 48px; 
 }
