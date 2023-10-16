@@ -6,6 +6,12 @@ body {
     background: rgb(248, 239, 234);
 }
 
+input,
+textarea,
+button {
+    appearance: none;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -31,7 +37,7 @@ body {
 }
 
 .logo-container {
-    background: rgba(29, 29, 29, 0.3);
+    background: rgba(29, 29, 29, 0.4);
     padding: 20px;
     margin-top: 35%;
     display: flex;
@@ -46,4 +52,22 @@ a {
 
 .material-icons.md-48 { 
     font-size: 48px; 
+}
+
+.italic {
+    font-style: italic;
+}
+
+button {
+    background-color: #b14e55;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px #b3b2b2;
+    border: none;
+}
+
+button:hover {
+    background-color: #c46066;
 }
