@@ -22,7 +22,7 @@ button {
  
 .photo-column {
     flex: 1;
-    max-width: 40%;
+    max-width: 30%;
     background: url(https://picsum.photos/id/436/800) 0 0 / cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -61,13 +61,50 @@ a {
 button {
     background-color: #b14e55;
     color: whitesmoke;
+    font-weight: 600;
     border-radius: 8px;
-    padding: 8px 20px;
+    padding: 1em 1.4em;
     cursor: pointer;
-    box-shadow: 4px 4px 5px #b3b2b2;
+    box-shadow: 0 0 10px #b3b2b2;
     border: none;
+    width: 200px;
 }
 
 button:hover {
     background-color: #c46066;
+}
+
+span a {
+    text-decoration: none;
+    color:#b14e55;
+    font-weight: 600;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+}
+
+.header {
+    padding: 2rem;
+    max-width: 70%;
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+.below-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 2rem;
 }
