@@ -92,19 +92,27 @@ span a:hover {
 
 .form {
     background: white;
-    padding: 4rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header {
     padding: 2rem;
     max-width: 70%;
-    font-size: 1.2rem;
+    font-size: large;
 }
 
 .below-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 2rem;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: xx-small;
 }
