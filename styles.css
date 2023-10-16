@@ -38,7 +38,7 @@ button {
 
 .logo-container {
     background: rgba(29, 29, 29, 0.4);
-    padding: 20px;
+    padding: 2em;
     margin-top: 35%;
     display: flex;
     align-items: center;
@@ -87,18 +87,18 @@ span a:hover {
 .form-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .form {
     background: white;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .header {
     padding: 2rem;
     max-width: 70%;
     font-size: 1.2rem;
-    margin-top: 5%;
 }
 
 .below-form {
