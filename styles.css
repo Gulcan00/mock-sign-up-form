@@ -137,6 +137,7 @@ div[class="inputs"] > p > label {
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(80, 79, 79);
+    letter-spacing: 1px;
 }
 
 div[class="inputs"] > p {
@@ -162,4 +163,25 @@ div[class="form"] > p {
     font-size: 1.5em;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
+}
+
+input#pwd + span {
+    position: relative;
+}
+
+input#pwd.error + span::after {
+    content: "* Passwords do not match";
+    color: rgb(189, 6, 6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.75em;
+}
+
+input[class*="error"], input[class*="error"]:focus {
+    border: 1px solid red;
+}
+
+input[class*="error"]:focus {
+    box-shadow: hsl(14, 77%, 66%) 0px 4px 6px;
 }
