@@ -98,7 +98,7 @@ span a:hover {
     justify-content: center;
 }
 
-.form {
+form {
     background: white;
     padding: 1rem;
     padding-left: 2rem;
@@ -159,7 +159,7 @@ input:focus {
     box-shadow: hsl(225, 30%, 57%) 0px 4px 6px;
 }
 
-div[class="form"] > p {
+form > p {
     font-size: 1.5em;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);

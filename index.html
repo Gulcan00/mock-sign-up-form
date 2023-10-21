@@ -32,38 +32,38 @@
                 </p>
             </div>
 
-            <div class="form">
+            <form action="/" method="get" id="form">
                 <p>Let's do this!</p>
                 <div class="inputs">
                     <p>
                         <label for="first-name">first name</label>
-                        <input type="text" id="first-name" name="first_name">
+                        <input type="text" id="first-name" name="first_name" required>
                     </p>
                     <p>
                         <label for="last-name">last name</label>
-                        <input type="text" id="last-name" name="last">
+                        <input type="text" id="last-name" name="last" required>
                     </p>
                     <p>
                         <label for="email">email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </p>
                     <p>
                         <label for="phone-num">phone number</label>
-                        <input type="tel" id="phone-num" name="phone_num">
+                        <input type="tel" id="phone-num" name="phone_num" required>
                     </p>
                     <p>
                         <label for="pwd">password</label>
-                        <input type="password" id="pwd" name="password">
+                        <input type="password" id="pwd" name="password" required minlength="8">
                         <span></span>
                     </p>
                     <p>
                         <label for="pwd-confirm">confirm password</label>
-                        <input type="password" id="pwd-confirm" name="password_confirm">
+                        <input type="password" id="pwd-confirm" name="password_confirm" required minlength="8">
                     </p>
                 </div>
-            </div>
+            </form>
             <div class="below-form">
-                <button>Create Account</button>
+                <button form="form">Create Account</button>
                 <span>Already have an account? <a href="#">Log in</a></span>
             </div>
         </div>
