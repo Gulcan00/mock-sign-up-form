@@ -2,9 +2,10 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(248, 239, 234);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
 }
 
 input,
@@ -28,6 +29,7 @@ button {
 .photo-column {
     flex: 1;
     max-width: 30%;
+    min-width: 250px;
     background: url(https://picsum.photos/id/436/800) 0 0 / cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -101,12 +103,19 @@ span a:hover {
     padding: 1rem;
     padding-left: 2rem;
     display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.inputs {
+    display: flex;
     flex-wrap: wrap;
+    max-width: 80%;
+    column-gap: 100px;
 }
 
 .header {
     padding: 2rem;
-    max-width: 70%;
     font-size: large;
 }
 
@@ -118,7 +127,35 @@ span a:hover {
     padding: 2rem;
 }
 
-label {
+div[class="inputs"] > p > label {
     text-transform: uppercase;
-    font-size: xx-small;
+    font-size: 0.75em;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(80, 79, 79);
+}
+
+div[class="inputs"] > p {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+    min-width: 200px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 1px solid royalblue;
+    box-shadow: hsl(225, 30%, 57%) 0px 4px 6px;
+}
+
+div[class="form"] > p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
 }
